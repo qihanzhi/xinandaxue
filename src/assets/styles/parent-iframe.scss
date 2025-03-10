@@ -1,0 +1,26 @@
+/* 框架通过iframe嵌套到其他系统时 */
+#app.is-iframe {
+  $base-nav-bar-height: 0px;
+  $tags-view-bar-height: 0px;
+
+  .main-container {
+    height: calc(100% - #{$base-nav-bar-height}) !important;
+    margin: 0px;
+    .content-container {
+      width: 100%;
+      margin: 0px;
+    }
+  }
+
+  .app-main {
+    height: calc(100vh - #{$base-nav-bar-height}) !important;
+  }
+
+  .hasTagsView {
+    .app-main {
+      height: calc(
+        100vh - #{$base-nav-bar-height} - #{$tags-view-bar-height}
+      ) !important;
+    }
+  }
+}

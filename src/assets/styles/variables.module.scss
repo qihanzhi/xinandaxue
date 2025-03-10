@@ -1,0 +1,140 @@
+
+// 默认菜单主题风格
+$base-logo-title-color: #ffffff;
+$base-logo-light-title-color: #001529;
+
+
+$--color-primary: #409EFF;
+$--color-success: #67C23A;
+$--color-warning: #E6A23C;
+$--color-danger: #F56C6C;
+$--color-info: #909399;
+
+
+//导航栏高度
+$base-nav-bar-height:64px;
+// 页签导航栏高度
+$tags-view-bar-height: 36px;
+// base color
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+
+// 默认菜单主题风格
+$base-menu-color-active:#f4f4f5;
+$base-sub-menu-background:#1f2d3d;
+$base-sub-menu-hover:#001528;
+$base-sidebar-width: 240px;
+
+// theme-dark
+$base-menu-color:rgba(0,0,0,.70);
+$base-menu-background:#ffffff;
+$base-top-nav-color: #001529;
+$base-top-menu-active-color: #145fff;
+$base-top-menu-active-line: #145fff;
+$base-top-menu-active-background:linear-gradient(#f4f7fd, #d0e4f7);
+$base-wrapper-background:linear-gradient(180deg, #d3e0f5, #f0f3f7);
+$base-top-menu-input-background: #b1c4ec;
+
+// theme-light
+$base-menu-light-color:rgba(0,0,0,.70);
+$base-menu-light-background:#ffffff;
+$base-top-nav-light-color: #001529;
+$base-top-menu-light-active-color: #145fff;
+$base-top-menu-light-active-line: #145fff;
+$base-top-menu-light-active-background:linear-gradient(#f4f7fd, #d0e4f7);
+$base-wrapper-light-background:linear-gradient(180deg, #d3e0f5, #f0f3f7);
+$base-top-menu-input-light-background: #b1c4ec;
+
+// theme-sky-blue
+$base-menu-sky-blue-color:rgba(0,0,0,.70);
+$base-menu-sky-blue-background:#275fbc;
+$base-top-nav-sky-blue-color: #ffffff;
+$base-top-menu-sky-blue-active-color: #ffffff;
+$base-top-menu-sky-blue-active-line: #64cceb;
+$base-top-menu-sky-blue-active-background:linear-gradient(90deg, #1f68c2, #1fa1e5);
+$base-wrapper-sky-blue-background:linear-gradient(180deg, #2c64cd, #f0f3f7);
+$base-top-menu-input-sky-blue-background: #6a84b9;
+
+// theme-pine-green
+$base-menu-pine-green-color:rgba(0,0,0,.70);
+$base-menu-pine-green-background:#27703b;
+$base-top-nav-pine-green-color: #ffffff;
+$base-top-menu-pine-green-active-color: #ffffff;
+$base-top-menu-pine-green-active-line: #23c45e;
+$base-top-menu-pine-green-active-background:linear-gradient(90deg, #407d50, #86c096);
+$base-wrapper-pine-green-background:linear-gradient(180deg, #76a884, #f0f3f7);
+$base-top-menu-input-pine-green-background: #7dab99;
+
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  navBarHeight:$base-nav-bar-height;
+  subMenuBackground: $base-sub-menu-background;
+  subMenuHover: $base-sub-menu-hover;
+  sideBarWidth: $base-sidebar-width;
+
+  /* 主题变量 */
+  menuColor: $base-menu-color;
+  menuLightColor: $base-menu-light-color;
+  menuColorActive: $base-menu-color-active;
+  menuBackground: $base-menu-background;
+  menuLightBackground: $base-menu-light-background;
+  subMenuBackground: $base-sub-menu-background;
+  subMenuHover: $base-sub-menu-hover;
+  sideBarWidth: $base-sidebar-width;
+  logoTitleColor: $base-logo-title-color;
+  logoLightTitleColor: $base-logo-light-title-color;
+  primaryColor: $--color-primary;
+  successColor: $--color-success;
+  dangerColor: $--color-danger;
+  infoColor: $--color-info;
+  warningColor: $--color-warning;
+  
+  topNavColor: $base-top-nav-color;
+  topMenuActiveColor: $base-top-menu-active-color;
+  topMenuActiveLine: $base-top-menu-active-line;
+  topMenuActiveBackground: $base-top-menu-active-background;
+  wrapperBackground: $base-wrapper-background;
+  topMenuInputBackground: $base-top-menu-input-background;
+
+  // 浅色
+  menuLightColor: $base-menu-light-color;
+  menuLightBackground: $base-menu-light-background;
+  topNavLightColor: $base-top-nav-light-color;
+  topMenuLightActiveColor: $base-top-menu-light-active-color;
+  topMenuLightActiveLine: $base-top-menu-light-active-line;
+  topMenuLightActiveBackground: $base-top-menu-light-active-background;
+  wrapperLightBackground: $base-wrapper-light-background;
+  topMenuInputLightBackground: $base-top-menu-input-light-background;
+
+  
+
+  // 其他主题变量
+  menuSkyBlueColor: $base-menu-sky-blue-color;
+  menuSkyBlueBackground: $base-menu-sky-blue-background;
+  topNavSkyBlueColor: $base-top-nav-sky-blue-color;
+  topMenuSkyBlueActiveColor: $base-top-menu-sky-blue-active-color;
+  topMenuSkyBlueActiveLine: $base-top-menu-sky-blue-active-line;
+  topMenuSkyBlueActiveBackground: $base-top-menu-sky-blue-active-background;
+  wrapperSkyBlueBackground: $base-wrapper-sky-blue-background;
+  topMenuInputSkyBlueBackground: $base-top-menu-input-sky-blue-background;
+
+
+  menuPineGreenColor: $base-menu-pine-green-color;
+  menuPineGreenBackground: $base-menu-pine-green-background;
+  topNavPineGreenColor: $base-top-nav-pine-green-color;
+  topMenuPineGreenActiveColor: $base-top-menu-pine-green-active-color;
+  topMenuPineGreenActiveLine: $base-top-menu-pine-green-active-line;
+  topMenuPineGreenActiveBackground: $base-top-menu-pine-green-active-background;
+  wrapperPineGreenBackground: $base-wrapper-pine-green-background;
+  topMenuInputPineGreenBackground: $base-top-menu-input-pine-green-background;
+
+
+}
